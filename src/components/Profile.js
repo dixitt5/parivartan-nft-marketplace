@@ -4,6 +4,7 @@ import MarketplaceJSON from "../Marketplace.json";
 import axios from "axios";
 import { useState } from "react";
 import NFTTile from "./NFTTile";
+import '../components/Profile.css'
 
 export default function Profile() {
   const [data, updateData] = useState([]);
@@ -63,8 +64,8 @@ export default function Profile() {
 
   return (
     <div className="profileClass" style={{ "min-height": "100vh" }}>
-      <Navbar></Navbar>
-      <div className="profileClass">
+      <Navbar/>
+      <div className="profileClass center-box">
         <div className="flex text-center flex-col mt-11 md:text-2xl text-white">
           <div className="mb-5">
             <h2 className="font-bold">Wallet Address</h2>
