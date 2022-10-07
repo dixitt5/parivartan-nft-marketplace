@@ -1,0 +1,8 @@
+.center-box{
+    background-color: rgba(84, 169, 222, 0.715);
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 5%;
+    position: relative;
+    left:25rem;
+}
