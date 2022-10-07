@@ -1,5 +1,7 @@
 import logo from "../logo_3.png";
-import fullLogo from "../full_logo.png";
+import fullLogo from "../logo1.png";
+import '../components/Navbar.css'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -71,14 +73,13 @@ function Navbar() {
   return (
     <div className="">
       <nav className="w-screen">
-        <ul className="flex items-end justify-between py-3 bg-transparent text-white pr-5">
+        <ul className="flex items-end justify-between py-3 bg-transparent text-white pr-5 navv">
           <li className="flex items-end ml-5 pb-2">
             <Link to="/">
-              <img src={fullLogo} alt="" width={120} height={120} className="inline-block -mt-2" />
-              <div className="inline-block font-bold text-xl ml-2">NFT Marketplace</div>
+              <div className="inline-block font-bold text-xl ml-2"><img src={fullLogo} alt="" width={100} height={100} className="inline-block -mt-2" />NFT Marketplace</div>
             </Link>
           </li>
-          <li className="w-2/6">
+          <li className="w-1/2 nav-right">
             <ul className="lg:flex justify-between font-bold mr-10 text-lg">
               {location.pathname === "/" ? (
                 <li className="border-b-2 hover:pb-0 p-2">
@@ -119,7 +120,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
-      <div className="text-white text-bold text-right mr-10 text-sm">
+      <div className="text-white text-bold text-right mr-10 text-sm -mt-10">
         {currAddress !== "0x" ? "Connected to" : "Not Connected. Please login to view NFTs"}{" "}
         {currAddress !== "0x" ? currAddress.substring(0, 15) + "..." : ""}
       </div>
