@@ -51,7 +51,18 @@ export default function Marketplace() {
     <div>
       <Navbar></Navbar>
       <div className="flex flex-col place-items-center mt-20">
-        <div className="md:text-xl font-bold text-white titleFont">Top NFTs</div>
+
+      <div class="wrapper">
+    <div class="static-txt">   </div>
+    <ul class="dynamic-txts">
+      <li><span>NFTs.</span></li>
+      <li><span>Culture.</span></li>
+      <li><span>Community.</span></li>
+    </ul>
+  </div>
+
+  
+
         <div className="flex mt-5 justify-between flex-wrap max-w-screen-xl text-center">
           {data.map((value, index) => {
             return <NFTTile data={value} key={index}/>;

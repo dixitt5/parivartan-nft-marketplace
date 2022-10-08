@@ -63,12 +63,12 @@ export default function Profile() {
   if (!dataFetched) getNFTData(tokenId);
 
   return (
-    <div className="profileClass" style={{ "min-height": "100vh" }}>
+    <div className="profileClass fl-box" style={{ "min-height": "100vh" }}>
       <Navbar/>
       <div className="profileClass center-box">
         <div className="flex text-center flex-col mt-11 md:text-2xl text-white">
           <div className="mb-5">
-            <h2 className="font-bold">Wallet Address</h2>
+            <h2 className="font-bold mt-5">Wallet Address</h2>
             {address}
           </div>
         </div>
