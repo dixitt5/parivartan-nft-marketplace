@@ -76,7 +76,7 @@ function Navbar() {
         <ul className="flex items-end justify-between py-3 bg-transparent text-white pr-5 navv">
           <li className="flex items-end ml-5 pb-2">
             <Link to="/">
-              <div className="inline-block font-bold text-xl ml-2"><img src={fullLogo} alt="" width={100} height={100} className="inline-block -mt-2" />NFT Marketplace</div>
+              <div className="inline-block font-bold text-xl ml-2"><img src={fullLogo} alt="" width={100} height={100} className="inline-block -mt-2" /><span className="typeAnim">NFT Marketplace</span></div>
             </Link>
           </li>
           <li className="w-1/2 nav-right">
