@@ -87,7 +87,7 @@ export default function NFTPage(props) {
           </div>
           <div>
             {currAddress === data.owner || currAddress === data.seller ? (
-              <div className="text-emerald-700">You are owner of this NFT</div>
+              <div className="text-white-700">You are owner of this NFT</div>
             ) : (
               <button
                 className="enableEthereumButton bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded text-sm"
