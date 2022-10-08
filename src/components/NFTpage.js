@@ -3,7 +3,7 @@ import axie from "../tile.jpeg";
 import { useLocation, useParams } from "react-router-dom";
 import MarketplaceJSON from "../Marketplace.json";
 import axios from "axios";
-import { useState } from "react";
+import { Component, useState } from "react";
 
 export default function NFTPage(props) {
   const [data, updateData] = useState({});
@@ -72,7 +72,7 @@ export default function NFTPage(props) {
     <div style={{ "min-height": "100vh" }}>
       <Navbar></Navbar>
       <div className="flex ml-20 mt-20">
-        <img src={data.image} alt="" className="w-2/5" />
+        <img src={data.image} alt="" className="w-2/5"/>
         <div className="text-xl ml-20 space-y-8 text-white shadow-2xl rounded-lg border-2 p-5">
           <div>Name: {data.name}</div>
           <div>Description: {data.description}</div>
