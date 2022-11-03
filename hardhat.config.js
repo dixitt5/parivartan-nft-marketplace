@@ -19,7 +19,7 @@ module.exports = {
       chainId: 1337,
     },
     goerli: {
-      url: "https://eth-goerli.g.alchemy.com/v2/2CEd_NYUbN3nbbgGZ7ViqyMr11oS6C05",
+      url: "https://omniscient-little-road.ethereum-goerli.discover.quiknode.pro/3f688bd9c15114d9315dee06b3bc32cbdc0fec13/",
       accounts: ["963a3031f2de5fa2ffad6c4e167f8ee3ea8ffdce82b496266a328ff9c8cd53e9"],
     },
   },
